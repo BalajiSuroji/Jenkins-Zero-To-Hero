@@ -8,5 +8,10 @@ pipeline {
         sh 'node --version'
       }
     }
+    stage('testing') {
+      steps {
+        echo '"hello world"'
+      }
+    }
   }
 }
