@@ -13,5 +13,15 @@ pipeline {
         echo '"hello world"'
       }
     }
+    stage('Node Js Application installation') {
+      steps {
+        sh 'sudo apt install nodejs'
+      }
+    }
+    stage('npm installation') {
+      steps {
+        sh 'sudo apt install npm'
+      }
+    }
   }
 }
