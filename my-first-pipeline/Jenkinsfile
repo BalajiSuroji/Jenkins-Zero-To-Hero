@@ -15,12 +15,12 @@ pipeline {
     }
     stage('Node Js Application installation') {
       steps {
-        sh 'sudo apt install nodejs'
+        sh 'apt install nodejs'
       }
     }
     stage('npm installation') {
       steps {
-        sh 'sudo apt install npm'
+        sh 'apt install npm'
       }
     }
   }
