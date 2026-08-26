@@ -15,12 +15,12 @@ pipeline {
     }
     stage('Node Js Application installation') {
       steps {
-        sh 'apt install nodejs'
+        sh 'nodejs --version'
       }
     }
-    stage('npm installation') {
+    stage('install dependecies') {
       steps {
-        sh 'apt install npm'
+        sh 'npm install'
       }
     }
   }
